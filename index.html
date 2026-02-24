@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Ultimate Lightbox Photography Store | Premium Photography & Web Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The ultimate lightbox photography store. Take your photography to the next level with premium lighting, studio gear, and conversion-optimized e-commerce web design solutions." />
+  <meta name="keywords" content="lightbox, photography, studio lighting, product photography, web design, e-commerce, photography store" />
+  <meta name="author" content="The Ultimate Lightbox Photography Store" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['system-ui', 'ui-sans-serif', 'Inter', 'Segoe UI', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            accent: {
+              50: '#fdf2ff',
+              100: '#fae5ff',
+              200: '#f5ccff',
+              300: '#eeaaff',
+              400: '#e178ff',
+              500: '#c026d3',
+              600: '#a21caf',
+              700: '#86198f',
+              800: '#701a75',
+              900: '#4a044e',
+            },
+          },
+          boxShadow: {
+            'soft': '0 10px 40px rgba(15, 23, 42, 0.12)',
+          },
+          transitionDuration: {
+            400: '400ms',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased scroll-smooth">
+  <!-- Announcement Bar -->
+  <div class="bg-gradient-to-r from-primary-600 via-accent-600 to-primary-700 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
+      <p class="flex items-center gap-2">
+        <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/10">
+          <i class="fas fa-truck text-xs"></i>
+        </span>
+        <span class="font-medium tracking-wide">Fast Worldwide Shipping (5 days delivery) on all lightbox kits.</span>
+      </p>
+      <p class="hidden sm:flex items-center gap-2 text-white/90">
+        <i class="fas fa-undo-alt text-xs"></i>
+        <span>100% Satisfaction Guarantee - Full refund upon return.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-100">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-primary-500 via-accent-500 to-primary-700 flex items-center justify-center shadow-soft">
+          <i class="fas fa-camera-retro text-white text-lg" aria-hidden="true"></i>
+        </div>
+        <div>
+          <a href="#home" class="block">
+            <span class="text-lg font-bold tracking-tight text-slate-900">Lightbox Studio Store</span>
+          </a>
+          <p class="text-xs text-slate-500 leading-tight">The ultimate lightbox photography store</p>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="hidden md:flex flex-1 max-w-md mx-6">
+        <label class="relative w-full" aria-label="Search products">
+          <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="search"
+            class="block w-full pl-10 pr-3 py-2 border border-slate-200 rounded-full bg-slate-50 focus:bg-white text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition duration-300"
+            placeholder="Search lightboxes, backdrops, and kits..."
+          />
+        </label>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+        <a href="#home" class="hover:text-primary-600 transition-colors duration-300">Home</a>
+        <a href="#features" class="hover:text-primary-600 transition-colors duration-300">Features</a>
+        <a href="#benefits" class="hover:text-primary-600 transition-colors duration-300">Benefits</a>
+        <a href="#about" class="hover:text-primary-600 transition-colors duration-300">About</a>
+        <a href="#testimonials" class="hover:text-primary-600 transition-colors duration-300">Testimonials</a>
+        <a href="#faq" class="hover:text-primary-600 transition-colors duration-300">FAQ</a>
+        <a href="#contact" class="hover:text-primary-600 transition-colors duration-300">Contact</a>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center gap-3">
+        <a
+          href="https://mail.com"
+          class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-primary-600 via-accent-500 to-primary-700 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+        >
+          <span>Buy Now</span>
+          <i class="fas fa-arrow-right ml-2 text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Controls -->
+      <div class="flex items-center gap-3 md:hidden">
+        <button
+          type="button"
+          class="mobile-menu-button inline-flex items-center justify-center rounded-full border border-slate-200 p-2 text-slate-700 hover:bg-slate-50 hover:border-primary-500 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition duration-300"
+          aria-label="Toggle navigation menu"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden border-t border-slate-100 bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-3">
+        <div class="flex mb-3">
+          <label class="relative w-full" aria-label="Search products mobile">
+            <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+              <i class="fas fa-search"></i>
+            </span>
+            <input
+              type="search"
+              class="block w-full pl-10 pr-3 py-2 border border-slate-200 rounded-full bg-slate-50 focus:bg-white text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition duration-300"
+              placeholder="Search lightboxes and kits..."
+            />
+          </label>
+        </div>
+        <a href="#home" class="block py-2 text-sm font-medium text-slate-700 hover:text-primary-600 transition-colors duration-300">Home</a>
+        <a href="#features" class="block py-2 text-sm font-medium text-slate-700 hover:text-primary-600 transition-colors duration-300">Features</a>
+        <a href="#benefits" class="block py-2 text-sm font-medium text-slate-700 hover:text-primary-600 transition-colors duration-300">Benefits</a>
+        <a href="#about" class="block py-2 text-sm font-medium text-slate-700 hover:text-primary-600 transition-colors duration-300">About</a>
+        <a href="#testimonials" class="block py-2 text-sm font-medium text-slate-700 hover:text-primary-600 transition-colors duration-300">Testimonials</a>
+        <a href="#faq" class="block py-2 text-sm font-medium text-slate-700 hover:text-primary-600 transition-colors duration-300">FAQ</a>
+        <a href="#contact" class="block py-2 text-sm font-medium text-slate-700 hover:text-primary-600 transition-colors duration-300">Contact</a>
+        <div class="pt-3 border-t border-slate-100">
+          <a
+            href="https://mail.com"
+            class="inline-flex w-full items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-primary-600 via-accent-500 to-primary-700 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+          >
+            <span>Buy Now</span>
+            <i class="fas fa-arrow-right ml-2 text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-[70vh] flex items-center overflow-hidden"
+      aria-labelledby="hero-title"
+    >
+      <div
+        class="absolute inset-0"
+        aria-hidden="true"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80"
+          alt="Professional product photography lightbox setup with camera and lighting gear"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/60"></div>
+      </div>
+
+      <div class="relative z-10 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-28">
+          <div class="max-w-4xl">
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold uppercase tracking-wide text-slate-100 mb-4">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2"></span>
+              New: Curated lightbox kits for photographers & creators
+            </span>
+            <h1
+              id="hero-title"
+              class="text-4xl md:text-6xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-4"
+            >
+              The ultimate lightbox photography store
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-100/90 leading-relaxed mb-8">
+              Take your photography to the next level with pro-grade lightboxes, studio-ready presets, and conversion-optimized web design built for photographers who sell online.
+            </p>
+
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
+              <a
+                href="https://mail.com"
+                class="inline-flex items-center justify-center px-7 py-3.5 text-base font-semibold rounded-full text-white bg-gradient-to-r from-primary-500 via-accent-500 to-primary-700 shadow-lg shadow-primary-900/40 hover:shadow-xl hover:shadow-primary-900/60 transform hover:scale-105 transition duration-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400"
+              >
+                Shop Lightbox Kits
+                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+              <button
+                type="button"
+                onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})"
+                class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-full border border-white/30 text-white hover:bg-white/10 hover:border-white/60 hover:text-white transform hover:scale-105 transition duration-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/70"
+              >
+                Explore Features
+                <i class="fas fa-camera ml-2 text-sm"></i>
+              </button>
+            </div>
+
+            <dl class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-slate-100/80 max-w-2xl">
+              <div class="flex flex-col">
+                <dt class="font-semibold text-slate-100">Lightbox Kits</dt>
+                <dd class="text-slate-200 text-lg font-bold">50+ curated</dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="font-semibold text-slate-100">Photographers</dt>
+                <dd class="text-slate-200 text-lg font-bold">10k+ served</dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="font-semibold text-slate-100">Web Stores</dt>
+                <dd class="text-slate-200 text-lg font-bold">2x conversion</dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="font-semibold text-slate-100">Support</dt>
+                <dd class="text-slate-200 text-lg font-bold">24/7 email</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-4">
+            Purpose-built for photographers who sell online
+          </h2>
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            From studio-grade lightbox equipment to high-converting web design, every detail is crafted to help you create scroll-stopping shots and turn visitors into paying clients.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1: Photography -->
+          <article class="group relative bg-white border border-slate-100 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-400 overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-700 opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
+            <div class="p-6 flex flex-col h-full">
+              <div class="flex items-center justify-between mb-4">
+                <div class="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-primary-50 text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors duration-400">
+                  <i class="fas fa-camera text-xl"></i>
+                </div>
+                <span class="text-xs font-semibold uppercase tracking-wide text-primary-600 bg-primary-50 px-2.5 py-1 rounded-full">
+                  Photography
+                </span>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">
+                Studio-perfect lightbox photography
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Capture consistent, shadow-free product shots in minutes with calibrated LED lightboxes designed for e-commerce, food, jewelry, and creative brands.
+              </p>
+              <ul class="mt-auto space-y-2 text-sm text-slate-600">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>Pre-configured lighting presets for glossy, matte, and reflective surfaces.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>Interchangeable backdrops and diffusers for any brand look.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>Compact, foldable designs that fit in your home studio or office.</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Feature 2: Web Design -->
+          <article class="group relative bg-white border border-slate-100 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-400 overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-accent-500 via-primary-500 to-accent-600 opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
+            <div class="p-6 flex flex-col h-full">
+              <div class="flex items-center justify-between mb-4">
+                <div class="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-accent-50 text-accent-600 group-hover:bg-accent-600 group-hover:text-white transition-colors duration-400">
+                  <i class="fas fa-globe text-xl"></i>
+                </div>
+                <span class="text-xs font-semibold uppercase tracking-wide text-accent-600 bg-accent-50 px-2.5 py-1 rounded-full">
+                  Web Design
+                </span>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">
+                Conversion-first e-commerce layouts
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Launch a storefront that’s as polished as your photos. We pair your lightbox visuals with proven UX patterns optimized for speed, clarity, and sales.
+              </p>
+              <ul class="mt-auto space-y-2 text-sm text-slate-600">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>Clean, responsive landing pages tailored for visual-heavy catalogs.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>Strategic CTAs and checkout flows that minimize friction.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>SEO-ready structure so your photos rank and convert organically.</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Feature 3: Integrated Workflow -->
+          <article class="group relative bg-white border border-slate-100 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-400 overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-primary-400 to-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
+            <div class="p-6 flex flex-col h-full">
+              <div class="flex items-center justify-between mb-4">
+                <div class="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-slate-50 text-slate-700 group-hover:bg-slate-800 group-hover:text-white transition-colors duration-400">
+                  <i class="fas fa-layer-group text-xl"></i>
+                </div>
+                <span class="text-xs font-semibold uppercase tracking-wide text-slate-600 bg-slate-50 px-2.5 py-1 rounded-full">
+                  Workflow
+                </span>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">
+                Seamless shot-to-store workflow
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Move from capture to published product page in record time with consistent lighting and web templates built to match your brand.
+              </p>
+              <ul class="mt-auto space-y-2 text-sm text-slate-600">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>Pre-sized image guidelines for Shopify, WooCommerce, and custom stores.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>Reusable layout blocks for hero shots, galleries, and detail views.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-emerald-500 mt-1"></i>
+                  <span>Onboarding resources to dial in your setup in under an hour.</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="py-10 bg-gradient-to-r from-primary-50 via-white to-accent-50 border-y border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h2 class="text-xl md:text-2xl font-semibold text-slate-900 tracking-tight mb-1">
+              Ready to upgrade your product photography?
+            </h2>
+            <p class="text-sm md:text-base text-slate-600">
+              Secure your lightbox kit today and get web design recommendations tailored to your store.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-3">
+            <a
+              href="https://mail.com"
+              class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-primary-600 via-accent-500 to-primary-700 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+            >
+              Get My Lightbox Kit
+              <i class="fas fa-arrow-right ml-2 text-xs"></i>
+            </a>
+            <span class="text-xs text-slate-500">
+              No subscription. 100% satisfaction guarantee.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-4">
+            Benefits tailored to photographers and online brands
+          </h2>
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            Whether you’re shooting solo in a spare room or managing a full content team, our gear and design approach are built to maximize your visual impact and revenue.
+          </p>
+        </div>
+
+        <div class="space-y-12 md:space-y-16">
+          <!-- Benefit 1: Photography (Text Left, Image Right, bg-white) -->
+          <article class="bg-white rounded-3xl border border-slate-100 shadow-soft overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
+              <div class="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                <span class="text-xs font-semibold uppercase tracking-wide text-primary-600 mb-2">
+                  Precision Photography
+                </span>
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                  Consistently stunning photography in any space
+                </h3>
+                <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
+                  Stop fighting harsh shadows, mixed color temperatures, and inconsistent product shots. Our lightbox systems are engineered to deliver studio-quality results from your desk, kitchen table, or small studio corner.
+                </p>
+                <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-6">
+                  With calibrated LEDs, adjustable diffusion, and tailored backgrounds, you can photograph entire collections in a repeatable way—so every product page looks like it belongs to the same polished brand.
+                </p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-bolt text-primary-500 mt-1"></i>
+                    <span>High CRI lighting that keeps true-to-life colors for fashion, cosmetics, and art.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-box-open text-primary-500 mt-1"></i>
+                    <span>Modular sizes for jewelry, food, tech gadgets, and large decor pieces.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-stopwatch text-primary-500 mt-1"></i>
+                    <span>Rapid setup and pack-down so you can shoot more products in less time.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="relative min-h-[260px] md:min-h-full">
+                <img
+                  src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80"
+                  alt="Photographer using studio lighting to shoot products in a controlled environment"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Benefit 2: Web Design (Image Left, Text Right, bg-gray-50) -->
+          <article class="bg-gray-50 rounded-3xl border border-slate-100 shadow-md overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
+              <div class="relative order-1 md:order-none min-h-[260px] md:min-h-full">
+                <img
+                  src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=800&h=600&fit=crop&q=80"
+                  alt="Modern web design layout on a laptop with clean interface for e-commerce"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/35 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+              <div class="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                <span class="text-xs font-semibold uppercase tracking-wide text-accent-600 mb-2">
+                  Conversion-driven Web Design
+                </span>
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                  Web design that sells your shots, not hides them
+                </h3>
+                <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
+                  Your images deserve more than a generic template. We design e-commerce experiences that spotlight your photography, reduce cognitive load, and make it effortless for shoppers to say “yes”.
+                </p>
+                <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-6">
+                  Clear hierarchy, fast-loading galleries, and decisive calls-to-action ensure every scroll tells a visual story that ends at the checkout.
+                </p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-sitemap text-accent-500 mt-1"></i>
+                    <span>Image-first layouts that keep your products center stage on any device.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-mouse-pointer text-accent-500 mt-1"></i>
+                    <span>Strategic placement of CTAs, trust badges, and reviews to guide decisions.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-chart-line text-accent-500 mt-1"></i>
+                    <span>Data-backed best practices that typically double conversion for photo-led brands.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Benefit 3: Tertiary Benefit (Text Left, Image Right, bg-white) -->
+          <article class="bg-white rounded-3xl border border-slate-100 shadow-soft overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
+              <div class="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                <span class="text-xs font-semibold uppercase tracking-wide text-primary-600 mb-2">
+                  Scalable Product Experience
+                </span>
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                  A product ecosystem that grows with your brand
+                </h3>
+                <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
+                  As your catalog expands and your audience grows, your photography and store need to keep pace. Our modular lightbox gear and flexible landing page patterns scale from first launch to full-time operation.
+                </p>
+                <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-6">
+                  Add more SKUs, introduce seasonal collections, or branch into new categories without starting from scratch visually or technically.
+                </p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-layer-group text-primary-500 mt-1"></i>
+                    <span>Expandable backdrop and prop systems to support new product lines.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-plug text-primary-500 mt-1"></i>
+                    <span>Web components you can reuse across product launches and campaigns.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fas fa-users text-primary-500 mt-1"></i>
+                    <span>Guides and templates ideal for freelancers, agencies, and in-house teams alike.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="relative min-h-[260px] md:min-h-full">
+                <img
+                  src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80"
+                  alt="Professional camera and lighting equipment arranged for an efficient product photography workflow"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wide text-primary-600 mb-2 block">
+              About Us
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-5">
+              The story behind the ultimate lightbox photography store
+            </h2>
+            <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
+              Lightbox Studio Store was founded by a team of commercial photographers and e-commerce strategists who spent years battling inconsistent product photos and poorly converting storefronts. What began as a small studio experiment—building custom lightboxes and landing pages for local makers—quickly grew into a dedicated store after clients consistently doubled their online sales with cleaner visuals and more focused product pages.
+            </p>
+            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+              Our mission is to democratize studio-quality photography and high-end web experiences for every creator selling online. We believe that sharp, consistent imagery paired with clear, honest design builds trust and drives sustainable growth. Every lightbox kit, layout pattern, and educational resource we release is rooted in our core values: clarity, reliability, and craftsmanship—and a vision of a web where every product story is told beautifully.
+            </p>
+          </div>
+          <div class="relative">
+            <div class="relative rounded-3xl overflow-hidden shadow-soft border border-slate-100">
+              <img
+                src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&h=600&fit=crop&q=80"
+                alt="Creative team of photographers and designers collaborating in a modern studio"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-tr from-primary-600/50 via-transparent to-accent-500/40 mix-blend-multiply"></div>
+            </div>
+            <div class="absolute -bottom-6 -left-4 bg-white rounded-2xl shadow-lg border border-slate-100 px-4 py-3 flex items-center gap-3">
+              <div class="h-10 w-10 rounded-xl bg-primary-50 flex items-center justify-center text-primary-600">
+                <i class="fas fa-award text-lg"></i>
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-slate-900 leading-tight">
+                  Trusted by 10,000+ creators
+                </p>
+                <p class="text-[11px] text-slate-500 leading-tight">
+                  From indie brands to studio teams worldwide
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+          <span class="text-xs font-semibold uppercase tracking-wide text-primary-600 mb-2 block">
+            Testimonials
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-4">
+            Creators transforming their stores and studios
+          </h2>
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            Hear how photographers, makers, and creative teams are using our lightboxes and web design approach to shoot faster, sell more, and look more professional online.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+          <!-- Review 1 -->
+          <article class="group bg-gray-50 border border-slate-100 rounded-3xl p-6 md:p-7 shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-400">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2 text-amber-400">
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-wide text-primary-600">
+                Verified Purchase
+              </span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed mb-4">
+              “I used to spend hours wrestling with natural light and editing each product photo individually. With their medium lightbox kit, my shots are consistent out of camera and I cut my editing time by at least 60%. The difference in my Etsy shop is insane—returns dropped and customers keep commenting on how ‘professional’ everything looks.”
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-700 font-semibold text-sm">
+                AR
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-slate-900">Alex Rivera</p>
+                <p class="text-xs text-slate-500">Product Photographer, Etsy Seller</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="group bg-gray-50 border border-slate-100 rounded-3xl p-6 md:p-7 shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-400">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2 text-amber-400">
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-wide text-primary-600">
+                Web Design + Kit
+              </span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed mb-4">
+              “We relaunched our Shopify home page using their recommended layout and replaced all of our old lifestyle photos with clean lightbox shots. Within four weeks, product page conversion jumped from 1.8% to 3.9%. The combination of image consistency and the new CTA placement made our analytics look like a different business.”
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-accent-100 flex items-center justify-center text-accent-700 font-semibold text-sm">
+                MK
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-slate-900">Maya Kim</p>
+                <p class="text-xs text-slate-500">Founder, Minimal Form Studio</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="group bg-gray-50 border border-slate-100 rounded-3xl p-6 md:p-7 shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-400">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2 text-amber-400">
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-wide text-primary-600">
+                Studio Workflow
+              </span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed mb-4">
+              “As an agency, we constantly shoot new SKUs for multiple brands. Their large-format lightbox and workflow guides have standardized our entire process. Our assistants know exactly how to set up for each client, and the images slide straight into the web templates they recommended. It easily paid for itself in the first month in time saved.”
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-700 font-semibold text-sm">
+                DT
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-slate-900">David Turner</p>
+                <p class="text-xs text-slate-500">Creative Director, Northline Agency</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 4 -->
+          <article class="group bg-gray-50 border border-slate-100 rounded-3xl p-6 md:p-7 shadow-md hover:shadow-xl transform hover:scale-[1.02] transition duration-400">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2 text-amber-400">
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+                <i class="fas fa-star text-sm"></i>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-wide text-primary-600">
+                DTC Brand
+              </span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed mb-4">
+              “What surprised me most was how much the web design suggestions changed our storytelling. We moved from cluttered galleries to a clean, scrollable layout that really lets the photos breathe. Customers now spend longer on our product pages, AOV went up by 22%, and the setup with their compact lightbox fits right in our small office.”
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-accent-100 flex items-center justify-center text-accent-700 font-semibold text-sm">
+                JL
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-slate-900">Jordan Lee</p>
+                <p class="text-xs text-slate-500">Co-founder, Brightside Goods</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="relative py-16 md:py-24">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1559136653-1b4a6c2d4ebb?w=1600&h=800&fit=crop&q=80"
+          alt="Product photography setup with camera, tripod, and lightbox in a studio"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-slate-900/80"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl text-center mx-auto">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">
+            Turn every product shot into a sales asset
+          </h2>
+          <p class="text-base md:text-lg text-slate-100/90 leading-relaxed mb-8">
+            Upgrade your lightbox setup and web experience in one move. Our curated kits and design guidance help you launch or refresh your store without guesswork.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://mail.com"
+              class="inline-flex items-center justify-center px-7 py-3.5 text-base font-semibold rounded-full text-white bg-gradient-to-r from-primary-500 via-accent-500 to-primary-700 shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-300 focus:ring-offset-slate-900"
+            >
+              Get Started Today
+              <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            </a>
+            <button
+              type="button"
+              onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+              class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-full border border-white/40 text-white hover:bg-white/10 hover:border-white hover:text-white transform hover:scale-105 transition duration-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/70 focus:ring-offset-slate-900"
+            >
+              Ask a pre-purchase question
+              <i class="fas fa-envelope ml-2 text-sm"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-10 md:mb-14">
+          <span class="text-xs font-semibold uppercase tracking-wide text-primary-600 mb-2 block">
+            FAQ
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-4">
+            Frequently asked questions
+          </h2>
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            Everything you need to know about our lightbox kits, web design guidance, and how they work together to level up your product photography.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-4">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+            <button
+              type="button"
+              class="faq-question w-full flex items-center justify-between px-5 md:px-6 py-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              aria-expanded="false"
+            >
+              <div class="pr-4">
+                <p class="text-sm md:text-base font-semibold text-slate-900">
+                  Will your lightbox kits work with my existing camera and lenses?
+                </p>
+              </div>
+              <div class="flex items-center justify-center h-8 w-8 rounded-full bg-slate-50 text-slate-500 faq-icon transform transition-transform duration-300">
+                <i class="fas fa-chevron-down text-xs"></i>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-5 md:px-6 pb-5 text-sm md:text-base text-slate-600 leading-relaxed">
+              Yes. Our lightbox kits are camera-agnostic and work with DSLRs, mirrorless systems, and even modern smartphones. The key is consistent lighting, not a specific body or lens. We include recommended starting settings for popular camera brands, plus tips on how to adjust aperture, shutter speed, and white balance so you can achieve tack-sharp, color-accurate images with the gear you already own.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+            <button
+              type="button"
+              class="faq-question w-full flex items-center justify-between px-5 md:px-6 py-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              aria-expanded="false"
+            >
+              <div class="pr-4">
+                <p class="text-sm md:text-base font-semibold text-slate-900">
+                  How does the web design component work if I already have a website?
+                </p>
+              </div>
+              <div class="flex items-center justify-center h-8 w-8 rounded-full bg-slate-50 text-slate-500 faq-icon transform transition-transform duration-300">
+                <i class="fas fa-chevron-down text-xs"></i>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-5 md:px-6 pb-5 text-sm md:text-base text-slate-600 leading-relaxed">
+              Many of our customers keep their existing platform and domain. Instead of forcing a full redesign, we provide page-level layout recommendations, section structures, and content prompts tailored to image-heavy product pages. You can implement these with your current theme on Shopify, WooCommerce, or a custom stack. The goal is to rearrange and refine what you already have so your new lightbox images load fast, look intentional, and guide visitors toward clear calls-to-action.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+            <button
+              type="button"
+              class="faq-question w-full flex items-center justify-between px-5 md:px-6 py-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              aria-expanded="false"
+            >
+              <div class="pr-4">
+                <p class="text-sm md:text-base font-semibold text-slate-900">
+                  How long will it take me to see results after setting everything up?
+                </p>
+              </div>
+              <div class="flex items-center justify-center h-8 w-8 rounded-full bg-slate-50 text-slate-500 faq-icon transform transition-transform duration-300">
+                <i class="fas fa-chevron-down text-xs"></i>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-5 md:px-6 pb-5 text-sm md:text-base text-slate-600 leading-relaxed">
+              Most solo creators are able to assemble their lightbox, dial in baseline camera settings, and update a first batch of product pages in a weekend. Many report noticing a clear visual improvement immediately, with measurable business impact—better click-through rates, more add-to-carts, and fewer “item didn’t look like the photos” complaints—within the first 2–4 weeks as those updated pages begin to receive traffic.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+            <button
+              type="button"
+              class="faq-question w-full flex items-center justify-between px-5 md:px-6 py-4 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              aria-expanded="false"
+            >
+              <div class="pr-4">
+                <p class="text-sm md:text-base font-semibold text-slate-900">
+                  What if I’m not happy with the kit or it doesn’t fit my products?
+                </p>
+              </div>
+              <div class="flex items-center justify-center h-8 w-8 rounded-full bg-slate-50 text-slate-500 faq-icon transform transition-transform duration-300">
+                <i class="fas fa-chevron-down text-xs"></i>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-5 md:px-6 pb-5 text-sm md:text-base text-slate-600 leading-relaxed">
+              We stand behind our 100% Satisfaction Guarantee. If the kit doesn’t suit your product sizes or you’re not seeing the results you expected, reach out to us within the return window and we’ll work with you on adjustments, alternative configurations, or a full refund upon return. Our team is happy to review sample images and make practical suggestions before you decide, so you can buy with complete confidence.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policies Section -->
+    <section class="py-10 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="flex items-start gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-primary-50 flex items-center justify-center text-primary-600">
+              <i class="fas fa-truck-fast text-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-slate-900">
+                Fast Worldwide Shipping
+              </h3>
+              <p class="text-xs text-slate-600">
+                We ship globally with tracking. Most orders arrive within 5 business days so you can upgrade your setup fast.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600">
+              <i class="fas fa-shield-heart text-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-slate-900">
+                100% Satisfaction Guarantee
+              </h3>
+              <p class="text-xs text-slate-600">
+                Try your kit risk-free. If it’s not the right fit, you’re covered by our full refund policy upon return.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-accent-50 flex items-center justify-center text-accent-600">
+              <i class="fas fa-headset text-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-slate-900">
+                Dedicated Creator Support
+              </h3>
+              <p class="text-xs text-slate-600">
+                Need help with lighting or layout? Our team is one email away with practical, photo-first guidance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Inline Compact Form -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-8 md:mb-10">
+          <span class="text-xs font-semibold uppercase tracking-wide text-primary-600 mb-2 block">
+            Contact
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 mb-3">
+            Ask about kits, compatibility, or web design options
+          </h2>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            Have questions before you commit? Send us a note and a specialist will respond with tailored recommendations for your products and current website.
+          </p>
+        </div>
+
+        <!-- Centered Contact Card -->
+        <div class="max-w-2xl mx-auto bg-white border border-slate-200 rounded-3xl shadow-soft px-5 py-6 md:px-7 md:py-7">
+          <form
+            class="flex flex-col md:flex-row items-stretch md:items-center gap-3"
+            aria-label="Contact form"
+            onsubmit="event.preventDefault(); document.getElementById('contact-success').classList.remove('hidden');"
+          >
+            <div class="flex-1 flex flex-col sm:flex-row gap-3">
+              <label class="relative flex-1">
+                <span class="sr-only">Email address</span>
+                <input
+                  type="email"
+                  required
+                  placeholder="Your email"
+                  class="w-full px-3 py-2.5 rounded-full border border-slate-200 bg-slate-50 text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition duration-300"
+                />
+              </label>
+              <label class="relative flex-[2]">
+                <span class="sr-only">Your question</span>
+                <input
+                  type="text"
+                  required
+                  placeholder="What are you looking to improve?"
+                  class="w-full px-3 py-2.5 rounded-full border border-slate-200 bg-slate-50 text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition duration-300"
+                />
+              </label>
+            </div>
+            <div class="flex-shrink-0">
+              <button
+                type="submit"
+                class="inline-flex w-full md:w-auto items-center justify-center px-5 md:px-6 py-2.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-primary-600 via-accent-500 to-primary-700 shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+              >
+                Send
+                <i class="fas fa-paper-plane ml-2 text-xs"></i>
+              </button>
+            </div>
+          </form>
+          <p class="mt-3 text-xs text-slate-500 text-center">
+            Or email us directly at
+            <a href="mailto:test@mail.com" class="font-semibold text-primary-600 hover:text-primary-700 underline-offset-2 hover:underline transition-colors duration-300">
+              test@mail.com
+            </a>
+            and we’ll respond within one business day.
+          </p>
+          <p id="contact-success" class="hidden mt-3 text-xs text-emerald-600 bg-emerald-50 border border-emerald-100 rounded-2xl px-3 py-2 text-center">
+            Thanks for reaching out. Your message has been received and our team will get back to you shortly.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 pt-12 md:pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 lg:gap-12 mb-10">
+        <!-- Company Info -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-primary-500 via-accent-500 to-primary-700 flex items-center justify-center shadow-soft">
+              <i class="fas fa-camera-retro text-white text-lg"></i>
+            </div>
+            <div>
+              <p class="text-base font-semibold text-white tracking-tight">
+                Lightbox Studio Store
+              </p>
+              <p class="text-[11px] text-slate-400 leading-tight">
+                The ultimate lightbox photography store
+              </p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-400 mb-4">
+            We blend studio-quality lightbox setups with high-converting web design guidance so every product you photograph is ready to sell online.
+          </p>
+          <div class="flex items-center gap-3">
+            <a
+              href="https://mail.com"
+              class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold rounded-full text-slate-900 bg-white hover:bg-primary-50 hover:text-primary-700 transform hover:scale-105 transition duration-300"
+            >
+              Shop Kits
+              <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-sm font-semibold text-white tracking-wide uppercase mb-3">
+            Quick Links
+          </h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#home" class="hover:text-white transition-colors duration-300">Home</a>
+            </li>
+            <li>
+              <a href="#features" class="hover:text-white transition-colors duration-300">Features</a>
+            </li>
+            <li>
+              <a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:text-white transition-colors duration-300">About</a>
+            </li>
+            <li>
+              <a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a>
+            </li>
+            <li>
+              <a href="#faq" class="hover:text-white transition-colors duration-300">FAQ</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h3 class="text-sm font-semibold text-white tracking-wide uppercase mb-3">
+            Resources
+          </h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="blog.html" class="hover:text-white transition-colors duration-300">Blog</a>
+            </li>
+            <li>
+              <a href="privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a>
+            </li>
+            <li>
+              <span class="text-slate-500 text-xs block mt-2">
+                Fast Worldwide Shipping (5 days delivery)<br />
+                100% Satisfaction Guarantee - Full refund upon return
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div>
+          <h3 class="text-sm font-semibold text-white tracking-wide uppercase mb-3">
+            Stay Connected
+          </h3>
+          <ul class="space-y-2 text-sm mb-4">
+            <li class="flex items-center gap-2">
+              <i class="fas fa-envelope text-slate-400 text-xs"></i>
+              <a href="mailto:test@mail.com" class="hover:text-white transition-colors duration-300">
+                test@mail.com
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center gap-3">
+            <a
+              href="#"
+              class="h-9 w-9 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-white transform hover:scale-105 transition duration-300"
+              aria-label="Visit our Instagram"
+            >
+              <i class="fab fa-instagram text-sm"></i>
+            </a>
+            <a
+              href="#"
+              class="h-9 w-9 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-white transform hover:scale-105 transition duration-300"
+              aria-label="Visit our Facebook"
+            >
+              <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a
+              href="#"
+              class="h-9 w-9 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-white transform hover:scale-105 transition duration-300"
+              aria-label="Visit our Twitter"
+            >
+              <i class="fab fa-x-twitter text-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <p>
+          &copy; <span id="current-year"></span> Lightbox Studio Store. All rights reserved.
+        </p>
+        <p class="flex items-center gap-2">
+          <span>Built for photographers who sell online.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Required JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year
+      const yearSpan = document.getElementById('current-year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+      const mobileMenu = document.querySelector('header nav .mobile-menu');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const icon = mobileMenuButton.querySelector('i');
+          if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+          }
+        });
+
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          });
+        });
+      }
+
+      // FAQ Accordion Toggle
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+          question.addEventListener('click', () => {
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = !answer.classList.contains('hidden');
+            
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+              if (otherItem !== item) {
+                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+              }
+            });
+            
+            // Toggle current item
+            answer?.classList.toggle('hidden');
+            item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+          });
+        }
+      });
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href !== '#' && href.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
